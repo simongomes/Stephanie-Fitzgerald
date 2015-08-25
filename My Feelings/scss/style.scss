@@ -4,14 +4,15 @@
 * Date: August 25, 2015
 * Version: 1.0
 */
-
+/*-- Fonts Import --*/
+@import url('http://fonts.googleapis.com/css?family=Open+Sans'); /* font-family: 'Open Sans', sans-serif; */
 body {
 	background: url("../image/internal-tower-wide.jpg") no-repeat scroll center top;
 }
 
 #wrap .main {
 	margin-top: 30px;
-
+	font-family: 'Open Sans', sans-serif;
 	.block {
 		.inner {
 			min-height: 500px;
@@ -22,6 +23,10 @@ body {
 		}
 
 		&.desty {
+			.inner {
+				max-width: 345px;
+				margin: 0 auto;
+			}
 			.desty-image {
 				margin: 0 auto;
 				display: block;
@@ -47,7 +52,76 @@ body {
 						background: #CC0001;
 					}
 				}
+				.back {
+					text-align: center;
+					img {
+						width: 80%;
+						max-height: 72px;
+					}
+				}
+			}
+		} // end desty
+
+		&.my-feeling {
+			.avatar-container {
+				padding: 20px;
+				.avatar-main {
+					position: relative;
+					width: 140px;
+					height: 470px;
+					margin: 0 auto;
+					background: url('../image/avatar.png') top center no-repeat;
+
+					.mood {
+						position: absolute;
+						top: 0;
+						left: 0;
+					}
+				}
+			}
+			.feeling-cards {
+				padding: 0 20px;
+				li {
+					margin-bottom: 15px;
+				}
+				.card {
+					border: 1px solid #CC0001;
+					border-radius: 5px;
+					width: 80%;
+					margin: 0 auto;
+					padding: 5px;
+
+					.card-inner {
+						width: 100%;
+						min-height: 200px;
+						background: #CC0001;
+					}
+				}
+			}
+		} // end my-feeling 
+	}
+}
+
+/* Media Queries */
+@media screen  and (max-width: 1023px) {
+	#wrap .main {
+		.block {
+			h2 {
+				text-align: center;
 			}
 		}
 	}
+	#wrap .main .block.desty .desty-cards .back img {
+		max-height: 92px;
+	}
+}
+@media screen  and (max-width: 991px) {
+	#wrap .main .block.desty .desty-cards .card .card-inner {
+		min-height: 80px;
+	}
+}
+@media screen  and ( max-width: 630px ) {
+	 #wrap .main .block.my-feeling .feeling-cards .card .card-inner {
+	 	min-height: 80px;
+	 }
 }
