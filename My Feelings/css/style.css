@@ -16,65 +16,98 @@ body {
   #wrap .main .block .inner {
     min-height: 500px;
     border-radius: 15px;
-    border: 5px solid #CC0001;
+    border: 3px solid #CC0001;
     background: rgba(255, 255, 255, 0.8);
     padding: 0 15px; }
-  #wrap .main .block.desty .inner {
-    max-width: 345px;
-    margin: 0 auto; }
-  #wrap .main .block.desty .desty-image {
-    margin: 0 auto;
-    display: block;
-    margin-top: 50px;
-    margin-bottom: 20px; }
-  #wrap .main .block.desty .desty-cards {
-    padding: 0 20px; }
-    #wrap .main .block.desty .desty-cards li {
-      margin-bottom: 15px; }
-    #wrap .main .block.desty .desty-cards .card {
-      border: 1px solid #CC0001;
-      border-radius: 5px;
-      /*min-height: 60px;*/
-      width: 80%;
+  #wrap .main .block.desty {
+    width: 30%;
+    float: left; }
+    #wrap .main .block.desty .inner {
+      max-width: 300px;
+      margin: 0 auto; }
+    #wrap .main .block.desty .desty-image {
       margin: 0 auto;
-      padding: 5px; }
-      #wrap .main .block.desty .desty-cards .card .card-inner {
-        width: 100%;
-        min-height: 60px;
-        background: #CC0001; }
-    #wrap .main .block.desty .desty-cards .back {
-      text-align: center; }
-      #wrap .main .block.desty .desty-cards .back img {
-        width: 80%;
-        max-height: 72px; }
-  #wrap .main .block.my-feeling .avatar-container {
-    padding: 20px; }
-    #wrap .main .block.my-feeling .avatar-container .avatar-main {
-      position: relative;
-      width: 140px;
-      height: 470px;
-      margin: 0 auto;
-      background: url("../image/avatar.png") top center no-repeat; }
-      #wrap .main .block.my-feeling .avatar-container .avatar-main .mood {
-        position: absolute;
-        top: 0;
-        left: 0; }
-  #wrap .main .block.my-feeling .feeling-cards {
-    padding: 0 20px; }
-    #wrap .main .block.my-feeling .feeling-cards li {
-      margin-bottom: 15px; }
-    #wrap .main .block.my-feeling .feeling-cards .card {
-      border: 1px solid #CC0001;
-      border-radius: 5px;
-      width: 80%;
-      margin: 0 auto;
-      padding: 5px; }
-      #wrap .main .block.my-feeling .feeling-cards .card .card-inner {
-        width: 100%;
-        min-height: 200px;
-        background: #CC0001; }
+      display: block;
+      margin-top: 50px;
+      margin-bottom: 20px; }
+    #wrap .main .block.desty .desty-cards {
+      padding: 0 20px; }
+      #wrap .main .block.desty .desty-cards li {
+        margin-bottom: 15px; }
+      #wrap .main .block.desty .desty-cards .card {
+        border: 1px solid #CC0001;
+        border-radius: 5px;
+        /*min-height: 60px;*/
+        width: 70%;
+        margin: 0 auto;
+        padding: 5px; }
+        #wrap .main .block.desty .desty-cards .card .card-inner {
+          width: 100%;
+          min-height: 60px;
+          background: #CC0001; }
+      #wrap .main .block.desty .desty-cards .back {
+        text-align: center; }
+        #wrap .main .block.desty .desty-cards .back img {
+          width: 70%;
+          max-height: 72px; }
+  #wrap .main .block.my-feeling {
+    width: 69%;
+    float: right; }
+    #wrap .main .block.my-feeling .avatar-container {
+      padding: 20px; }
+      #wrap .main .block.my-feeling .avatar-container .avatar-main {
+        position: relative;
+        width: 140px;
+        height: 470px;
+        margin: 0 auto;
+        background: url("../image/avatar.png") center -75px no-repeat; }
+        #wrap .main .block.my-feeling .avatar-container .avatar-main .mood {
+          position: absolute;
+          top: -72px;
+          left: -106px; }
+    #wrap .main .block.my-feeling .feeling-cards {
+      padding: 0 0; }
+      #wrap .main .block.my-feeling .feeling-cards li {
+        margin-bottom: 30px; }
+      #wrap .main .block.my-feeling .feeling-cards .card {
+        border-radius: 10px;
+        /*width: 85%;*/
+        margin: 0 auto;
+        padding: 5px;
+        overflow: hidden; }
+        #wrap .main .block.my-feeling .feeling-cards .card.front {
+          border: 3px solid #CC0001; }
+        #wrap .main .block.my-feeling .feeling-cards .card.back {
+          border: 1px solid #CC0001;
+          min-height: 200px;
+          position: relative; }
+          #wrap .main .block.my-feeling .feeling-cards .card.back .face-container {
+            position: relative; }
+            #wrap .main .block.my-feeling .feeling-cards .card.back .face-container img {
+              position: absolute;
+              margin-top: -60px;
+              margin-left: -112px; }
+          #wrap .main .block.my-feeling .feeling-cards .card.back .mood-text {
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            right: 0;
+            text-align: center; }
+        #wrap .main .block.my-feeling .feeling-cards .card .card-inner {
+          width: 100%;
+          min-height: 180px;
+          background: #CC0001; }
 
 /* Media Queries */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  #wrap .main .block.desty .desty-cards .back img {
+    width: auto; }
+
+  #wrap .main .block.desty .desty-cards .card {
+    width: 45%; }
+
+  #wrap .main .block.my-feeling .feeling-cards .card.back .face-container img {
+    width: 339px; } }
 @media screen and (max-width: 1023px) {
   #wrap .main .block h2 {
     text-align: center; }
