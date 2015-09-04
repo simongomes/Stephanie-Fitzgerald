@@ -1,0 +1,196 @@
+/*
+* My Feelings - Card Game Stylesheet
+* Author: SIMON GOMES
+* Date: August 25, 2015
+* Version: 1.0
+*/
+/*-- Fonts Import --*/
+@import url('http://fonts.googleapis.com/css?family=Open+Sans'); /* font-family: 'Open Sans', sans-serif; */
+body {
+	background: url("../image/internal-tower-wide.jpg") no-repeat scroll center top;
+}
+
+#wrap.matching-game .main {
+	margin-top: 30px;
+	font-family: 'Open Sans', sans-serif;
+	.block {
+		.inner {
+			min-height: 500px;
+			border-radius: 15px;
+			border: 3px solid #CC0001;
+			background: rgba(255, 255, 255, 0.8);
+			padding: 0 15px;
+		}
+
+		&.desty {
+			width: 20%;
+			float: left;
+			.inner {
+				max-width: 300px;
+				margin: 0 auto;
+				.push-down {
+					height: 200px;
+				}
+				.go-back {
+					margin-bottom: 50px;
+				}
+			}
+			.desty-image {
+				margin: 0 auto;
+				display: block;
+				margin-top: 50px;
+				margin-bottom: 20px;
+			}
+			/*.desty-cards {
+				padding: 0 20px;
+				li {
+					margin-bottom: 15px;
+				}
+				.card {
+					border: 1px solid #CC0001;
+					border-radius: 5px;
+					
+					width: 70%;
+					margin: 0 auto;
+					padding: 5px;
+
+					.card-inner {
+						width: 100%;
+						min-height: 60px;
+						background: #CC0001;
+					}
+				}
+				.back {
+					text-align: center;
+					img {
+						width: 70%;
+						max-height: 72px;
+					}
+				}
+			}*/
+		} // end desty
+
+		&.my-feeling {
+			width: 79%;
+			float: right;
+			.avatar-container {
+				padding: 20px;
+				.avatar-main {
+					position: relative;
+					width: 140px;
+					height: 470px;
+					margin: 0 auto;
+					background: url('../image/avatar.png') center -75px no-repeat;
+					.mood {
+						position: absolute;
+						top: -72px;
+						left: -106px;
+					}
+				}
+			}
+			.matching-cards {
+				padding: 0 0;
+				ul {
+					margin-bottom: 0;
+				}
+				li {
+					margin-bottom: 15px;
+				}
+				.card {						
+					margin: 0 auto;										
+					display: block;
+					min-height: 160px;
+					cursor: pointer;
+					.front {
+						border: 3px solid #CC0001;						
+						padding: 5px;
+						border-radius: 10px;			
+						.card-inner {
+							width: 100%;
+							height: 100%;
+							background: #CC0001;
+
+							.star {
+								text-align: center;
+								display: none;
+								img {
+									margin-top: 35px;
+								}
+							}
+						}
+					}
+					.back {
+						border: 3px solid #CC0001;						
+						padding: 5px;
+						border-radius: 10px;
+						.card-inner {
+							width: 100%;
+							height: 100%;
+							background: #ffffff;
+							.head {
+								vertical-align: middle;
+								margin-left: -3px;
+								margin-top: 27%;
+							}
+						}
+						.face-container {
+							position: relative;
+							img {
+								position: absolute;
+								margin-top: -60px;
+								margin-left: -112px;
+							}							
+						}
+						.mood-text {
+							position: absolute;
+							bottom: 10px;
+							left: 0;
+							right: 0;
+							text-align: center;
+								
+						}
+					}					
+				}
+				.reset {
+					margin-bottom: 15px;
+					display: block;
+				}
+			}
+		} // end my-feeling 
+	}
+}
+
+/* Media Queries */
+@media screen  and  (min-width: 992px) and (max-width: 1199px) {
+	#wrap .main .block.desty .desty-cards .back img {
+		width: auto;
+	}
+	#wrap .main .block.desty .desty-cards .card {
+		width: 45%;
+	}
+	#wrap .main .block.my-feeling .feeling-cards .card.back .face-container img {
+		width: 339px;
+	}
+}
+@media screen  and (max-width: 1023px) {
+	#wrap .main {
+		.block {
+			h2 {
+				text-align: center;
+			}
+		}
+	}
+	#wrap .main .block.desty .desty-cards .back img {
+		max-height: 92px;
+	}
+}
+@media screen  and (max-width: 991px) {
+	#wrap .main .block.desty .desty-cards .card .card-inner {
+		min-height: 80px;
+	}
+}
+@media screen  and ( max-width: 630px ) {
+	 #wrap .main .block.my-feeling .feeling-cards .card .card-inner {
+	 	min-height: 80px;
+	 }
+}

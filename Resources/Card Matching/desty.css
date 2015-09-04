@@ -1,0 +1,2353 @@
+body { background: url("/student/img/main-wide.jpg") no-repeat center top }
+.island-body { background: url("/student/img/island-wide.jpg") no-repeat center top !important}
+.inside-tower-body { background: url("/student/img/inside-tower-wide.jpg") no-repeat center top !important}
+/*  .desty-window { border: 4px solid #cc0000; border-radius: 20px; min-height: 530px; background-color: #ffffff }
+ *  .desty-window { -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+ *      opacity: 0.8
+ *      }*/
+.desty-window { border: 4px solid #993399; border-radius: 20px; min-height: 560px; background: rgba(255,255,255,0.8) }
+.row {margin: 0 -7.5px;}
+#desty-wrapper {max-width: 1020px; margin: 28px auto }
+@media only screen and (max-height : 640px) and (orientation: landscape) {
+#desty-wrapper {margin-top: 0 }
+}
+
+#desty-right-window { margin-left: 10px; margin-right: -10px; width: 82% !important; max-width: 874px }
+#desty-help { margin-top:20px }
+#desty-button-next { position: absolute;right:10px;bottom:10px }
+.glyphicon { color:#993399 }
+
+/* avatar.css */
+#avatar-preview {
+    float: left;
+    width: 219px;
+/*	height: 478px;*/
+    min-height: 400px
+}
+#avatar-holder {
+    height: 550px;
+    left: -50px;
+    margin-top: -60px;
+    overflow: hidden;
+    position: relative;
+    top: -15px;
+    width: 250px;
+}
+/*#avatar-preview img {
+ *     position: absolute;
+ *     	width: 333px;
+ *     	    height: 550px;
+ *     	    }*/
+#avatar-preview img {
+    position: absolute;
+    margin-left: -60px;
+    margin-top: -60px;
+}
+#avatar-preview .gallery-image {
+    width: 90%;
+    height: auto;
+    top: 120px;
+    left: 25px;
+}
+
+/*#avatar-menu { border: 1px solid #ff0000 }*/
+#avatar-menu > span {
+    background: url("/student/img/icons/top/top-icons.png") no-repeat scroll 0 0;
+    border: 0 none;
+    border-radius: 13px;
+    box-shadow: -2px 4px 4px 0 #808080;
+    cursor: pointer;
+    float: left;
+    height: 50px;
+    margin: 0 4px;
+    width: 50px;
+    position: relative;
+    z-index: 100;
+}
+#avatar-menu .name {background-position: 0 0;}
+#avatar-menu .gender {background-position: -50px 0;}
+#avatar-menu .height {background-position: -100px 0;}
+#avatar-menu .head {background-position: -150px 0;}
+#avatar-menu .hair {background-position: -200px 0;}
+#avatar-menu .eyes {background-position: -250px 0;}
+#avatar-menu .eyebrows {background-position: -300px 0;}
+#avatar-menu .nose {background-position: -350px 0;}
+#avatar-menu .lips {background-position: -400px 0;}
+#avatar-menu .accessories {background-position: -450px 0;}
+#avatar-menu .clothes {background-position: -500px 0;}
+#avatar-menu .name:hover {background-position: 0 -50px;}
+#avatar-menu .gender:hover {background-position: -50px -50px;}
+#avatar-menu .height:hover {background-position: -100px -50px}
+#avatar-menu .head:hover {background-position: -150px -50px;}
+#avatar-menu .hair:hover {background-position: -200px -50px;}
+#avatar-menu .eyes:hover {background-position: -250px -50px;}
+#avatar-menu .eyebrows:hover {background-position: -300px -50px;}
+#avatar-menu .nose:hover {background-position: -350px -50px;}
+#avatar-menu .lips:hover {background-position: -400px -50px;}
+#avatar-menu .accessories:hover {background-position: -450px -50px;}
+#avatar-menu .clothes:hover {background-position: -500px -50px;}
+#avatar-menu .name.active {background-position: 0 -100px;}
+#avatar-menu .gender.active {background-position: -50px -100px;}
+#avatar-menu .height.active {background-position: -100px -100px;}
+#avatar-menu .head.active {background-position: -150px -100px;}
+#avatar-menu .hair.active {background-position: -200px -100px;}
+#avatar-menu .eyes.active {background-position: -250px -100px;}
+#avatar-menu .eyebrows.active {background-position: -300px -100px;}
+#avatar-menu .nose.active {background-position: -350px -100px;}
+#avatar-menu .lips.active {background-position: -400px -100px;}
+#avatar-menu .accessories.active {background-position: -450px -100px;}
+#avatar-menu .clothes.active {background-position: -500px -100px;}
+#avatarmain {
+ /*   height: 400px;*/
+    min-height: 350px;
+    position: relative;
+ /*   width:580px;*/
+    float:left;
+}
+/*
+ * .avatarblocks {
+ *     display: none;
+ *         height: 400px;
+ *             width: 580px;
+ *             }*/
+
+.avatarblocks.active {
+ display:inline-block;
+}
+
+/*.avatarblocks .build {
+ *     display: inline-block;
+ *         margin-top: 30px;
+ *         }*/
+#birthday-build{
+	margin-top:30px;
+	margin-left:90px;
+}
+#live-in-build, #nationality-build{
+	margin-top:50px;
+	margin-left:50px;
+}
+.left-block {
+    float: left;
+  /*  text-align: center;*/
+    width: 276px;
+  /*  margin-left: 32px*/
+    margin-left: auto
+}
+.right-block {
+    float: left;
+    padding-top: 25px;
+    width: 200px;
+    margin-left: 24px
+}
+.avatarblocks .pattern-build {
+    margin-top: 10px;
+}
+#name-block .left-block {
+    width: 580px;
+}
+#name-build {
+    margin-top: 30px;
+    width: 420px;
+}
+#name-build h4 {
+    font-size: 20px;
+    margin: 8px 0;
+}
+.name-build input {
+	padding:5px;
+	margin-top: 2px;
+}
+.name-build input.active {
+	border:2px solid #265f59;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-border-radius:10px;
+	border-radius:10px;
+	background:#fff;
+	margin-top: 0;
+}
+#gender-block .left-block {
+    width: 580px;
+}
+#gender-build {
+    margin-top: 0px;
+    width: 420px;
+}
+#gender-build > div {
+    float: left;
+    text-align: center;
+    width: 210px;
+}
+#gender-build span {
+    float: none;
+    margin: 0 auto;
+}
+#gender-build h4 {
+    font-size: 20px;
+    margin: 8px 0;
+}
+.gender-build span {
+	cursor: pointer;
+	display: inline-block;
+}
+.gender-build .male {
+    background: url("/student/img/icons/build/build-gender-big.png") no-repeat scroll;
+    width: 109px;
+	height: 252px;
+}
+.gender-build .female {
+    background: url("/student/img/icons/build/build-gender-female-big.png") no-repeat scroll;
+    width:130px;
+	height:252px;
+}
+.gender-build .male:hover, .gender-build .female:hover {
+	background-position: 0 -252px;
+}
+.gender-build .male.active, .gender-build .female.active {
+	background-position: 0 -504px;
+}
+/*
+ * #height-block .left-block {
+ *     width: 580px;
+ *     }*/
+#height-build {
+    margin-top: 30px;
+   /* width: 560px;*/
+}
+
+#height-build > div {
+    float: left;
+    text-align: center;
+    width: 210px;
+}
+#height-build span {
+    float: none;
+}
+#height-build span {
+    cursor: pointer;
+    margin: 0 14px;
+	display: inline-block;
+}
+.height-build .small {
+    background: url("/student/img/icons/build/build-gender-small.png") no-repeat scroll 0 0;
+    height: 192px !important;
+    margin-top: 55px;
+    width: 83px !important;
+}
+.height-build .medium {
+    background: url("/student/img/icons/build/build-gender-medium.png") no-repeat scroll 0 0;
+    height: 222px !important;
+    margin-top: 27px;
+    width: 96px !important;
+}
+.height-build .big {
+    background: url("/student/img/icons/build/build-gender-big.png") no-repeat scroll 0 0;
+    height: 252px !important;
+    width: 109px !important;
+}
+.height-build .large {
+    background: url("/student/img/icons/build/build-gender-large.png") no-repeat scroll 0 0;
+    height: 282px !important;
+    width: 122px !important;
+}
+.height-build.female .small {
+    background: url("/student/img/icons/build/build-gender-female-small.png") no-repeat scroll 0 0;
+    height: 192px !important;
+    margin-top: 55px;
+    width: 99px !important;
+}
+.height-build.female .medium {
+    background: url("/student/img/icons/build/build-gender-female-medium.png") no-repeat scroll 0 0;
+    height: 222px !important;
+    margin-top: 27px;
+    width: 115px !important;
+}
+.height-build.female .big {
+    background: url("/student/img/icons/build/build-gender-female-big.png") no-repeat scroll 0 0;
+    height: 252px !important;
+    width: 130px !important;
+}
+.height-build.female .large {
+    background: url("/student/img/icons/build/build-gender-female-large.png") no-repeat scroll 0 0;
+    height: 282px !important;
+    width: 146px !important;
+}
+.height-build .small:hover, .height-build.female .small:hover {
+	background-position: 0 -192px;
+}
+.height-build .medium:hover, .height-build.female .medium:hover {
+	background-position: 0 -222px;
+}
+.height-build .big:hover, .height-build.female .big:hover {
+	background-position: 0 -252px;
+}
+.height-build .large:hover, .height-build.female .large:hover {
+	background-position: 0 -282px;
+}
+.height-build .small.active, .height-build.female .small.active {
+	background-position: 0 -384px;
+}
+.height-build .medium.active, .height-build.female .medium.active {
+	background-position: 0 -444px;
+}
+.height-build .big.active, .height-build.female .big.active {
+	background-position: 0 -504px;
+}
+.height-build .large.active, .height-build.female .large.active {
+	background-position: 0 -564px;
+}
+.build span:not(.glyphicon), .subblocks.main span
+  {
+    cursor: pointer;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+	float: left;
+	margin: 5px;
+}
+/*#head-block .right-block{
+ * 	padding-top:30px;
+ * 	}*/
+#head-block {
+	padding-top:30px;
+}
+#eyes-block {
+	margin-top:30px;
+}
+#eyes-block .left-block { margin-left: 12px !important }
+.head-build span {
+    background: url("/student/img/icons/build/build-heads.png") no-repeat scroll 0 0;
+}
+.head-build .head1 {
+    background-position: 0 0;
+}
+.head-build .head2 {
+    background-position: -50px 0;
+}
+.head-build .head5 {
+    background-position: -100px 0;
+}
+.head-build .head6 {
+    background-position: -150px 0;
+}
+.head-build .head3 {
+    background-position: -200px 0;
+}
+.head-build .head4 {
+    background-position: -250px 0;
+}
+.head-build .head7 {
+    background-position: -300px 0;
+}
+.head-build .head8 {
+    background-position: -350px 0;
+}
+.head-build .head1:hover {
+	background-position: 0 -50px;
+}
+.head-build .head2:hover {
+    background-position: -50px -50px;
+}
+.head-build .head5:hover {
+    background-position: -100px -50px;
+}
+.head-build .head6:hover {
+    background-position: -150px -50px;
+}
+.head-build .head3:hover {
+    background-position: -200px -50px;
+}
+.head-build .head4:hover {
+    background-position: -250px -50px;
+}
+.head-build .head7:hover {
+    background-position: -300px -50px;
+}
+.head-build .head8:hover {
+    background-position: -350px -50px;
+}
+.head-build .head1.active {
+	background-position: 0 -100px;
+}
+.head-build .head2.active {
+    background-position: -50px -100px;
+}
+.head-build .head5.active {
+    background-position: -100px -100px;
+}
+.head-build .head6.active {
+    background-position: -150px -100px;
+}
+.head-build .head3.active {
+    background-position: -200px -100px;
+}
+.head-build .head4.active {
+    background-position: -250px -100px;
+}
+.head-build .head7.active {
+    background-position: -300px -100px;
+}
+.head-build .head8.active {
+    background-position: -350px -100px;
+}
+.head-pattern span,
+.hair-pattern span,
+.subblocks span.pattern
+ {
+	float: left;
+    cursor: pointer;
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+	margin: 2px;
+}
+.avatarblocks .colour,
+.avatarblocks .pattern-colour
+{
+    border: 2px solid #00352B;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    height: 42px;
+    width: 42px;
+	float: left;
+	margin: 2px;
+}
+.avatarblocks .colour:hover,
+.avatarblocks .pattern-colour:hover {
+    border-color: #FF9C00;
+}
+.avatarblocks .colour.active,
+.avatarblocks .pattern-colour.active {
+    border-color: #219E95;
+}
+.avatarblocks .colour.grey,
+.avatarblocks .pattern-colour.grey {
+    background-color: #E5E5E5;
+}
+#accessories-block.avatarblocks .colour.grey,
+#clothes-block.avatarblocks .colour.grey,
+#clothes-block.avatarblocks .pattern-colour.grey {
+    background-color: #808080;
+}
+.avatarblocks .colour.black,
+.avatarblocks .pattern-colour.black {
+    background-color: #000000;
+}
+.avatarblocks .head-colour .colour.black {
+    background-color: #320202;
+}
+.avatarblocks .colour.brown,
+.avatarblocks .pattern-colour.brown {
+    background-color: #983201;
+}
+.avatarblocks .colour.yellow,
+.avatarblocks .pattern-colour.yellow {
+    background-color: #FFD967;
+}
+.avatarblocks .colour.orange,
+.avatarblocks .pattern-colour.orange {
+    background-color: #F86C00;
+}
+.avatarblocks .colour.red,
+.avatarblocks .pattern-colour.red {
+    background-color: #FF0500;
+}
+.avatarblocks .colour.blue,
+.avatarblocks .pattern-colour.blue {
+    background-color: #336CFF;
+}
+.avatarblocks .colour.purple,
+.avatarblocks .pattern-colour.purple {
+    background-color: #470067;
+}
+.avatarblocks .colour.pink,
+.avatarblocks .pattern-colour.pink {
+    background-color: #FF00E4;
+}
+.avatarblocks .lips-colour .colour.pink {
+    background-color: #FFA29F;
+}
+.avatarblocks .colour.green,
+.avatarblocks .pattern-colour.green {
+    background-color: #69FF1E;
+}
+.avatarblocks .colour.light-blue,
+.avatarblocks .pattern-colour.light-blue {
+    background-color: #9BD9FF;
+}
+.avatarblocks .colour.hazel,
+.avatarblocks .pattern-colour.hazel {
+    background-color: #97885D;
+}
+.avatarblocks .colour.white,
+.avatarblocks .pattern-colour.white {
+    background-color: #FFFFFF;
+}
+.avatarblocks .head-colour .colour.white {
+    background-color: #FDDDBE;
+}
+.avatarblocks .colour.blond,
+.avatarblocks .pattern-colour.blond {
+    background-color: #D5BD80;
+}
+.head-pattern span {
+    background: url("/student/img/icons/pattern/pattern-heads.png") no-repeat scroll 0 0;
+}
+.head-pattern .pattern4 {
+    background-position: 0 0;
+}
+.head-pattern .pattern1 {
+    background-position: -42px 0;
+}
+.head-pattern .pattern2 {
+    background-position: -84px 0;
+}
+.head-pattern .pattern3 {
+    background-position: -126px 0;
+}
+.head-pattern .pattern4:hover, .head-pattern .pattern4.active {
+    background-position: 0 -42px;
+}
+.head-pattern .pattern1:hover, .head-pattern .pattern1.active {
+    background-position: -42px -42px;
+}
+.head-pattern .pattern2:hover, .head-pattern .pattern2.active {
+    background-position: -84px -42px;
+}
+.head-pattern .pattern3:hover, .head-pattern .pattern3.active {
+    background-position: -126px -42px;
+}
+.panel-nav {
+    display: table;
+ /*   margin: -40px auto 10px;*/
+    margin: 0 60px 0;
+}
+.panel-nav a {
+    background: url("/student/img/icons/arrow/arrows.png") no-repeat scroll 0 0;
+    display: inline-block;
+    float: left;
+    height: 30px;
+    width: 30px;
+	background-size: 180px 60px;
+}
+.panel-nav a.arrow-previous, .panel-nav a.arrow-previous.inactive:hover {
+    background-position: -60px 0;
+}
+.panel-nav a.arrow-previous:hover {
+    background-position: -60px -30px;
+}
+.panel-nav a.arrow-next, .panel-nav a.arrow-next.inactive:hover {
+    background-position: -90px 0;
+}
+.panel-nav a.arrow-next:hover {
+    background-position: -90px -30px;
+}
+.avatarblocks .panel-nav span {
+    background: none repeat scroll 0 0;
+    cursor: default;
+    float: none;
+    height: 18px;
+    line-height: 18px;
+    padding: 0;
+    width: auto;
+}
+.panel-nav .panel-num {
+    color: #0D4035;
+    float: left;
+    font-size: 26px;
+    font-weight: bold;
+}
+.panel-nav .cur-page {
+}
+.panel-nav .max-page {
+    color: #219E95;
+}
+.build-page { display:none;}
+.build-page.active { display:inline-block;}
+
+#hair-build { margin-top: 30px }
+.hair-build .main span
+ {
+    width: 47px;
+}
+.hair-build .main span
+ {
+    background: url("/student/img/icons/build/build-hairs-folders.png");
+}
+.hair-build .main .hair-1 {
+    background-position: 0 0;
+}
+.hair-build .main .hair-2 {
+    background-position: -47px 0;
+}
+.hair-build .main .hair-1:hover {
+    background-position: 0 -50px;
+}
+.hair-build .main .hair-2:hover {
+    background-position: -47px -50px;
+}
+.hair-build span:not(.glyphicon) {
+    background: url("/student/img/icons/build/build-hairs.png") no-repeat scroll 0 0;
+}
+.hair-build .hair1 {
+    background-position: 0 0;
+}
+#build-hair-2 {
+    background-position: -50px 0 ;
+}
+#build-hair-3 {
+    background-position: -100px 0;
+}
+#build-hair-4 {
+    background-position: -150px 0;
+}
+#build-hair-5 {
+    background-position: -200px 0;
+}
+#build-hair-6 {
+    background-position: -250px 0;
+}
+#build-hair-7 {
+    background-position: -300px 0;
+}
+#build-hair-8 {
+    background-position: -350px 0;
+}
+#build-hair-9 {
+    background-position: -400px 0;
+}
+#build-hair-10 {
+    background-position: -450px 0;
+}
+#build-hair-11 {
+    background-position: -500px 0;
+}
+#build-hair-12 {
+    background-position: -550px 0;
+}
+#build-hair-13 {
+    background-position: -600px 0;
+}
+#build-hair-14 {
+    background-position: -650px 0;
+}
+#build-hair-15 {
+    background-position: -700px 0;
+}
+#build-hair-16 {
+    background-position: -750px 0;
+}
+#build-hair-17 {
+    background-position: -800px 0;
+}
+#build-hair-18 {
+    background-position: -850px 0;
+}
+#build-hair-19 {
+    background-position: -900px 0;
+}
+#build-hair-20 {
+    background-position: -950px 0;
+}
+#build-hair-21 {
+    background-position: -1000px 0;
+}
+#build-hair-22 {
+    background-position: -1050px 0;
+}
+
+#build-hair-1:hover {
+    background-position: 0 -50px;
+}
+#build-hair-2:hover {
+    background-position: -50px -50px;
+}
+#build-hair-3:hover {
+    background-position: -100px -50px ;
+}
+#build-hair-4:hover {
+    background-position: -150px -50px;
+}
+#build-hair-5:hover {
+    background-position: -200px -50px;
+}
+#build-hair-6:hover {
+    background-position: -250px -50px;
+}
+#build-hair-7:hover {
+    background-position: -300px -50px;
+}
+#build-hair-8:hover {
+    background-position: -350px -50px;
+}
+#build-hair-9:hover {
+    background-position: -400px -50px;
+}
+#build-hair-10:hover {
+    background-position: -450px -50px;
+}
+#build-hair-11:hover {
+    background-position: -500px -50px;
+}
+#build-hair-12:hover {
+    background-position: -550px -50px;
+}
+#build-hair-13:hover {
+    background-position: -600px -50px;
+}
+#build-hair-14:hover {
+    background-position: -650px -50px;
+}
+#build-hair-15:hover {
+    background-position: -700px -50px;
+}
+#build-hair-16:hover {
+    background-position: -750px -50px;
+}
+#build-hair-17:hover {
+    background-position: -800px -50px;
+}
+#build-hair-18:hover {
+    background-position: -850px -50px;
+}
+#build-hair-19:hover {
+    background-position: -900px -50px;
+}
+#build-hair-20:hover {
+    background-position: -950px -50px;
+}
+#build-hair-21:hover {
+    background-position: -1000px -50px;
+}
+#build-hair-22:hover {
+    background-position: -1050px -50px;
+}
+
+#build-hair-1.active {
+    background-position: 0 -100px;
+}
+#build-hair-2.active {
+    background-position: -50px -100px;
+}
+#build-hair-3.active {
+    background-position: -100px -100px;
+}
+#build-hair-4.active {
+    background-position: -150px -100px;
+}
+#build-hair-5.active {
+    background-position: -200px -100px;
+}
+#build-hair-6.active {
+    background-position: -250px -100px;
+}
+#build-hair-7.active {
+    background-position: -300px -100px;
+}
+#build-hair-8.active {
+    background-position: -350px -100px;
+}
+#build-hair-9.active {
+    background-position: -400px -100px;
+}
+#build-hair-10.active {
+    background-position: -450px -100px;
+}
+#build-hair-11.active {
+    background-position: -500px -100px;
+}
+#build-hair-12.active {
+    background-position: -550px -100px;
+}
+#build-hair-13.active {
+    background-position: -600px -100px;
+}
+#build-hair-14.active {
+    background-position: -650px -100px;
+}
+#build-hair-15.active {
+    background-position: -700px -100px;
+}
+#build-hair-16.active {
+    background-position: -750px -100px;
+}
+#build-hair-17.active {
+    background-position: -800px -100px;
+}
+#build-hair-18.active {
+    background-position: -850px -100px;
+}
+#build-hair-19.active {
+    background-position: -900px -100px;
+}
+#build-hair-20.active {
+    background-position: -950px -100px;
+}
+#build-hair-21.active {
+    background-position: -1000px -100px;
+}
+#build-hair-22.active {
+    background-position: -1050px -100px;
+}
+.hair-pattern span {
+    background: url("/student/img/icons/pattern/pattern-hairs.png") no-repeat scroll 0 0;
+}
+.hair-pattern .pattern1 {
+    background-position: 0 0;
+}
+.hair-pattern .pattern2 {
+    background-position: -42px 0;
+}
+.hair-pattern .pattern3 {
+    background-position: -84px 0;
+}
+.hair-pattern .pattern4 {
+    background-position: -126px 0;
+}
+.hair-pattern .pattern5 {
+    background-position: -168px 0;
+}
+.hair-pattern .pattern6 {
+    background-position: -210px 0;
+}
+.hair-pattern .pattern7 {
+    background-position: -252px 0;
+}
+.hair-pattern .pattern1:hover {
+    background-position: 0 -42px;
+}
+.hair-pattern .pattern2:hover {
+    background-position: -42px -42px;
+}
+.hair-pattern .pattern3:hover {
+    background-position: -84px -42px;
+}
+.hair-pattern .pattern4:hover {
+    background-position: -126px -42px;
+}
+.hair-pattern .pattern5:hover {
+    background-position: -168px -42px;
+}
+.hair-pattern .pattern6:hover {
+    background-position: -210px -42px;
+}
+.hair-pattern .pattern7:hover {
+    background-position: -252px -42px;
+}
+.hair-pattern .pattern1.active {
+    background-position: 0 -84px;
+}
+.hair-pattern .pattern2.active {
+    background-position: -42px -84px;
+}
+.hair-pattern .pattern3.active {
+    background-position: -84px -84px;
+}
+.hair-pattern .pattern4.active {
+    background-position: -126px -84px;
+}
+.hair-pattern .pattern5.active {
+    background-position: -168px -84px;
+}
+.hair-pattern .pattern6.active {
+    background-position: -210px -84px;
+}
+.hair-pattern .pattern7.active {
+    background-position: -252px -84px;
+}
+.hair-pattern span.remove {
+    background-position: -294px 0;
+}
+.hair-pattern span.remove:hover {
+    background-position: -294px -42px;
+}
+
+
+.eyes-build span:not(.glyphicon)
+{
+    background: url("/student/img/icons/build/build-eyes.png") no-repeat scroll 0 0;
+}
+span.cur-page, span.max-page {
+    background: #ffffff !important
+}
+#build-eyes-1 {
+    background-position: 0 0;
+}
+#build-eyes-2 {
+    background-position: -50px 0;
+}
+#build-eyes-3 {
+    background-position: -100px 0;
+}
+#build-eyes-4 {
+    background-position: -150px 0;
+}
+#build-eyes-5 {
+    background-position: -200px 0;
+}
+#build-eyes-6 {
+    background-position: -250px 0;
+}
+#build-eyes-7 {
+    background-position: -300px 0;
+}
+#build-eyes-8 {
+    background-position: -350px 0;
+}
+#build-eyes-9 {
+    background-position: -400px 0;
+}
+#build-eyes-10 {
+    background-position: -450px 0;
+}
+#build-eyes-11 {
+    background-position: -500px 0;
+}
+#build-eyes-12 {
+    background-position: -550px 0;
+}
+#build-eyes-13 {
+    background-position: -600px 0;
+}
+#build-eyes-14 {
+    background-position: -650px 0;
+}
+#build-eyes-15 {
+    background-position: -700px 0;
+}
+#build-eyes-16 {
+    background-position: -750px 0;
+}
+#build-eyes-17 {
+    background-position: -800px 0;
+}
+#build-eyes-18 {
+    background-position: -850px 0;
+}
+#build-eyes-19 {
+    background-position: -900px 0;
+}
+#build-eyes-20 {
+    background-position: -950px 0;
+}
+#build-eyes-21 {
+    background-position: -1000px 0;
+}
+#build-eyes-22 {
+    background-position: -1050px 0;
+}
+#build-eyes-23 {
+    background-position: -1100px 0;
+}
+#build-eyes-24 {
+    background-position: -1150px 0;
+}
+#build-eyes-1:hover {
+    background-position: 0 -50px;
+}
+#build-eyes-2:hover {
+    background-position: -50px -50px;
+}
+#build-eyes-3:hover {
+    background-position: -100px -50px;
+}
+#build-eyes-4:hover {
+    background-position: -150px -50px;
+}
+#build-eyes-5:hover {
+    background-position: -200px -50px;
+}
+#build-eyes-6:hover {
+    background-position: -250px -50px;
+}
+#build-eyes-7:hover {
+    background-position: -300px -50px;
+}
+#build-eyes-8:hover {
+    background-position: -350px -50px;
+}
+#build-eyes-9:hover {
+    background-position: -400px -50px;
+}
+#build-eyes-10:hover {
+    background-position: -450px -50px;
+}
+#build-eyes-11:hover {
+    background-position: -500px -50px;
+}
+#build-eyes-12:hover {
+    background-position: -550px -50px;
+}
+#build-eyes-13:hover {
+    background-position: -600px -50px;
+}
+#build-eyes-14:hover {
+    background-position: -650px -50px;
+}
+#build-eyes-15:hover {
+    background-position: -700px -50px;
+}
+#build-eyes-16:hover {
+    background-position: -750px -50px;
+}
+#build-eyes-17:hover {
+    background-position: -800px -50px;
+}
+#build-eyes-18:hover {
+    background-position: -850px -50px;
+}
+#build-eyes-19:hover {
+    background-position: -900px -50px;
+}
+#build-eyes-20:hover {
+    background-position: -950px -50px;
+}
+#build-eyes-21:hover {
+    background-position: -1000px -50px;
+}
+#build-eyes-22:hover {
+    background-position: -1050px -50px;
+}
+#build-eyes-23:hover {
+    background-position: -1100px -50px;
+}
+#build-eyes-24:hover {
+    background-position: -1150px -50px;
+}
+#build-eyes-1.active {
+    background-position: 0 -100px;
+}
+#build-eyes-2.active {
+    background-position: -50px -100px;
+}
+#build-eyes-3.active {
+    background-position: -100px -100px;
+}
+#build-eyes-4.active {
+    background-position: -150px -100px;
+}
+#build-eyes-5.active {
+    background-position: -200px -100px;
+}
+#build-eyes-6.active {
+    background-position: -250px -100px;
+}
+#build-eyes-7.active {
+    background-position: -300px -100px;
+}
+#build-eyes-8.active {
+    background-position: -350px -100px;
+}
+#build-eyes-9.active {
+    background-position: -400px -100px;
+}
+#build-eyes-10.active {
+    background-position: -450px -100px;
+}
+#build-eyes-11.active {
+    background-position: -500px -100px;
+}
+#build-eyes-12.active {
+    background-position: -550px -100px;
+}
+#build-eyes-13.active {
+    background-position: -600px -100px;
+}
+#build-eyes-14.active {
+    background-position: -650px -100px;
+}
+#build-eyes-15.active {
+    background-position: -700px -100px;
+}
+#build-eyes-16.active {
+    background-position: -750px -100px;
+}
+#build-eyes-17.active {
+    background-position: -800px -100px;
+}
+#build-eyes-18.active {
+    background-position: -850px -100px;
+}
+#build-eyes-19.active {
+    background-position: -900px -100px;
+}
+#build-eyes-20.active {
+    background-position: -950px -100px;
+}
+#build-eyes-21.active {
+    background-position: -1000px -100px;
+}
+#build-eyes-22.active {
+    background-position: -1050px -100px;
+}
+#build-eyes-23.active {
+    background-position: -1100px -100px;
+}
+#build-eyes-24.active {
+    background-position: -1150px -100px;
+}
+.eyebrows-build span:not(.glyphicon) {
+    background: url("/student/img/icons/build/build-eyebrows.png") no-repeat scroll 0 0;
+}
+#build-eyebrows-1 {
+    background-position: 0 0;
+}
+#build-eyebrows-2 {
+    background-position: -50px 0;
+}
+#build-eyebrows-3 {
+    background-position: -100px 0;
+}
+#build-eyebrows-4 {
+    background-position: -150px 0;
+}
+#build-eyebrows-5 {
+    background-position: -200px 0;
+}
+#build-eyebrows-6 {
+    background-position: -250px 0;
+}
+#build-eyebrows-1:hover {
+	background-position: 0 -50px;
+}
+#build-eyebrows-2:hover {
+    background-position: -50px -50px;
+}
+#build-eyebrows-3:hover {
+    background-position: -100px -50px;
+}
+#build-eyebrows-4:hover {
+    background-position: -150px -50px;
+}
+#build-eyebrows-5:hover {
+    background-position: -200px -50px;
+}
+#build-eyebrows-6:hover {
+    background-position: -250px -50px;
+}
+#build-eyebrows-1.active {
+	background-position: 0 -100px;
+}
+#build-eyebrows-2.active {
+    background-position: -50px -100px;
+}
+#build-eyebrows-3.active {
+    background-position: -100px -100px;
+}
+#build-eyebrows-4.active {
+    background-position: -150px -100px;
+}
+#build-eyebrows-5.active {
+    background-position: -200px -100px;
+}
+#build-eyebrows-6.active {
+    background-position: -250px -100px;
+}
+#eyebrows-block { margin-top: 30px }
+#eyebrows-block .left-block { margin-left: 12px !important }
+
+/* Nose */
+.nose-build span {
+    background: url("/student/img/icons/build/build-nose.png") no-repeat scroll 0 0;
+}
+.nose-build .nose1 {
+    background-position: 0 0;
+}
+.nose-build .nose2 {
+    background-position: -50px 0;
+}
+.nose-build .nose3 {
+    background-position: -100px 0;
+}
+.nose-build .nose4 {
+    background-position: -150px 0;
+}
+.nose-build .nose5 {
+    background-position: -200px 0;
+}
+.nose-build .nose6 {
+    background-position: -250px 0;
+}
+.nose-build .nose7 {
+    background-position: -300px 0;
+}
+.nose-build .nose8 {
+    background-position: -350px 0;
+}
+.nose-build .nose9 {
+    background-position: -400px 0;
+}
+.nose-build .nose10 {
+    background-position: -450px 0;
+}
+.nose-build .nose11 {
+    background-position: -500px 0;
+}
+.nose-build .nose12 {
+    background-position: -550px 0;
+}
+.nose-build .nose1:hover {
+    background-position: 0 -50px;
+}
+.nose-build .nose2:hover {
+    background-position: -50px -50px;
+}
+.nose-build .nose3:hover {
+    background-position: -100px -50px;
+}
+.nose-build .nose4:hover {
+    background-position: -150px -50px;
+}
+.nose-build .nose5:hover {
+    background-position: -200px -50px;
+}
+.nose-build .nose6:hover {
+    background-position: -250px -50px;
+}
+.nose-build .nose7:hover {
+    background-position: -300px -50px;
+}
+.nose-build .nose8:hover {
+    background-position: -350px -50px;
+}
+.nose-build .nose9:hover {
+    background-position: -400px -50px;
+}
+.nose-build .nose10:hover {
+    background-position: -450px -50px;
+}
+.nose-build .nose11:hover {
+    background-position: -500px -50px;
+}
+.nose-build .nose12:hover {
+    background-position: -550px -50px;
+}
+.nose-build .nose1.active {
+    background-position: 0 -100px;
+}
+.nose-build .nose2.active {
+    background-position: -50px -100px;
+}
+.nose-build .nose3.active {
+    background-position: -100px -100px;
+}
+.nose-build .nose4.active {
+    background-position: -150px -100px;
+}
+.nose-build .nose5.active {
+    background-position: -200px -100px;
+}
+.nose-build .nose6.active {
+    background-position: -250px -100px;
+}
+.nose-build .nose7.active {
+    background-position: -300px -100px;
+}
+.nose-build .nose8.active {
+    background-position: -350px -100px;
+}
+.nose-build .nose9.active {
+    background-position: -400px -100px;
+}
+.nose-build .nose10.active {
+    background-position: -450px -100px;
+}
+.nose-build .nose11.active {
+    background-position: -500px -100px;
+}
+.nose-build .nose12.active {
+    background-position: -550px -100px;
+}
+#nose-block { margin-top: 30px }
+#nose-block .left-block { margin-left: 12px !important }
+
+.lips-build span {
+    background: url("/student/img/icons/build/build-lips.png") no-repeat scroll 0 0;
+}
+.lips-build .lips1 {
+    background-position: 0 0;
+}
+.lips-build .lips2 {
+    background-position: -50px 0;
+}
+.lips-build .lips3 {
+    background-position: -100px 0;
+}
+.lips-build .lips4 {
+    background-position: -150px 0;
+}
+.lips-build .lips5 {
+    background-position: -200px 0;
+}
+.lips-build .lips6 {
+    background-position: -250px 0;
+}
+.lips-build .lips7 {
+    background-position: -300px 0;
+}
+.lips-build .lips8 {
+    background-position: -350px 0;
+}
+.lips-build .lips9 {
+    background-position: -400px 0;
+}
+.lips-build .lips10 {
+    background-position: -450px 0;
+}
+.lips-build .lips11 {
+    background-position: -500px 0;
+}
+.lips-build .lips12 {
+    background-position: -550px 0;
+}
+.lips-build .lips1:hover {
+    background-position: 0 -50px;
+}
+.lips-build .lips2:hover {
+    background-position: -50px -50px;
+}
+.lips-build .lips3:hover {
+    background-position: -100px -50px;
+}
+.lips-build .lips4:hover {
+    background-position: -150px -50px;
+}
+.lips-build .lips5:hover {
+    background-position: -200px -50px;
+}
+.lips-build .lips6:hover {
+    background-position: -250px -50px;
+}
+.lips-build .lips7:hover {
+    background-position: -300px -50px;
+}
+.lips-build .lips8:hover {
+    background-position: -350px -50px;
+}
+.lips-build .lips9:hover {
+    background-position: -400px -50px;
+}
+.lips-build .lips10:hover {
+    background-position: -450px -50px;
+}
+.lips-build .lips11:hover {
+    background-position: -500px -50px;
+}
+.lips-build .lips12:hover {
+    background-position: -550px -50px;
+}
+.lips-build .lips1.active {
+    background-position: 0 -100px;
+}
+.lips-build .lips2.active {
+    background-position: -50px -100px;
+}
+.lips-build .lips3.active {
+    background-position: -100px -100px;
+}
+.lips-build .lips4.active {
+    background-position: -150px -100px;
+}
+.lips-build .lips5.active {
+    background-position: -200px -100px;
+}
+.lips-build .lips6.active {
+    background-position: -250px -100px;
+}
+.lips-build .lips7.active {
+    background-position: -300px -100px;
+}
+.lips-build .lips8.active {
+    background-position: -350px -100px;
+}
+.lips-build .lips9.active {
+    background-position: -400px -100px;
+}
+.lips-build .lips10.active {
+    background-position: -450px -100px;
+}
+.lips-build .lips11.active {
+    background-position: -500px -100px;
+}
+.lips-build .lips12.active {
+    background-position: -550px -100px;
+}
+#lips-block { margin-top: 30px }
+#lips-block .left-block { margin-left: 12px !important }
+
+.subblocks {
+display:none;
+}
+.subblocks.active {
+display:inline-block;
+}
+.subblocks.main.active .build {
+    border: 0;
+/*	margin-top: 30px;*/
+}
+.subblocks.active .build {
+    border: 3px solid #339999;
+    border-radius: 20px;
+    height: 212px;
+   /* margin-top: 25px;*/
+    padding: 15px;
+   /* width: 240px;*/
+}
+
+#hair-build .subblocks.active .build {
+/*	 height: 185px;*/
+}
+#hair-build .left-block.return{
+	bottom: -25px;
+    margin-left: 180px;
+    position: absolute;
+    width: 40px;
+}
+#clothes-block .left-block.return{
+	margin-left: 180px;
+    bottom: 85px;
+    position: absolute;
+    width: 40px;
+}
+#clothes-block { margin-top: 30px }
+#clothes-block .left-block { margin-left: 12px !important }
+
+#accessories-block .left-block.return{
+	margin-left: 180px;
+    bottom: 85px;
+    position: absolute;
+    width: 40px;
+}
+#accessories-block { margin-top: 30px }
+#accessories-block .left-block { margin-left: 12px !important }
+
+
+/*used in avatar builder*/
+.action-return {
+    background: url("/student/img/icons/action/circle-icons.png") no-repeat scroll 0 0;
+    height: 38px;
+    opacity: 0.8;
+    width: 38px;
+    display: table;
+    margin: 0 auto;
+    margin-top: 8px;
+}
+.action-return:hover {
+    opacity: 1;
+}
+
+/* used in multi-input step */
+#action-return {
+    background: url("/student/img/icons/action/circle-icons.png") no-repeat scroll 0 0;
+    height: 38px;
+    opacity: 0.8;
+    width: 38px;
+    display: table;
+    margin: 0 auto;
+    margin-top: 8px;
+}
+#action-return:hover {
+    opacity: 1;
+}
+
+.left-block.return {
+    bottom: 35px;
+    position: absolute;
+	width: 40px;
+	margin-left: 220px;
+}
+.subblocks.accessories-build span
+ {
+    width: 47px;
+}
+.accessories-build span
+ {
+    background: url("/student/img/icons/build/build-accessories-folders.png");
+}
+.glasses-build span,
+.hat-build span,
+.mobilityaids-build span,
+.handbag-build span,
+.phone-build span,
+.scarf-build span,
+.tie-build span,
+.necklace-build span
+ {
+    background: url("/student/img/icons/build/build-accessories.png") no-repeat scroll 0 0;
+}
+.accessories-build .accessories-eyewear {
+    background-position: 0 0;
+}
+.accessories-build .accessories-headwear {
+    background-position: -47px 0;
+}
+.accessories-build .accessories-mobilityaids {
+    background-position: -94px 0;
+}
+.accessories-build .accessories-lefthand {
+    background-position: -141px 0;
+}
+.accessories-build .accessories-righthand {
+    background-position: -188px 0;
+}
+.accessories-build .accessories-scarf {
+    background-position: -235px 0;
+}
+.accessories-build .accessories-tie {
+    background-position: -282px 0;
+}
+.accessories-build .accessories-necklace {
+    background-position: -329px 0;
+}
+.accessories-build .accessories-eyewear:hover {
+    background-position: 0 -50px;
+}
+.accessories-build .accessories-headwear:hover {
+    background-position: -47px -50px;
+}
+.accessories-build .accessories-mobilityaids:hover {
+    background-position: -94px -50px;
+}
+.accessories-build .accessories-lefthand:hover {
+    background-position: -141px -50px;
+}
+.accessories-build .accessories-righthand:hover {
+    background-position: -188px -50px;
+}
+.accessories-build .accessories-scarf:hover {
+    background-position: -235px -50px;
+}
+.accessories-build .accessories-tie:hover {
+    background-position: -282px -50px;
+}
+.accessories-build .accessories-necklace:hover {
+    background-position: -329px -50px;
+}
+.glasses-build .glasses1 {
+    background-position: -100px 0;
+}
+.glasses-build .glasses2 {
+    background-position: -50px 0;
+}
+.glasses-build .glasses1:hover {
+    background-position: -100px -50px;
+}
+.glasses-build .glasses2:hover {
+    background-position: -50px -50px;
+}
+.glasses-build .glasses1.active {
+    background-position: -100px -100px;
+}
+.glasses-build .glasses2.active {
+    background-position: -50px -100px;
+}
+.hat-build .hat1 {
+    background-position: -450px 0;
+}
+.hat-build .hat1:hover {
+    background-position: -450px -50px;
+}
+.hat-build .hat1.active {
+    background-position: -450px -100px;
+}
+.mobilityaids-build .wheelchair1 {
+    background-position: -350px 0;
+}
+.mobilityaids-build .wheelchair1:hover {
+    background-position: -350px -50px;
+}
+.mobilityaids-build .wheelchair1.active {
+    background-position: -350px -100px;
+}
+.mobilityaids-build .stick1 {
+    background-position: -550px 0;
+}
+.mobilityaids-build .stick1:hover {
+    background-position: -550px -50px;
+}
+.mobilityaids-build .stick1.active {
+    background-position: -550px -100px;
+}
+.handbag-build .handbag1 {
+    background-position: -300px 0;
+}
+.handbag-build .handbag1:hover {
+    background-position: -300px -50px;
+}
+.handbag-build .handbag1.active {
+    background-position: -300px -100px;
+}
+.phone-build .phone1 {
+    background-position: -150px 0;
+}
+.phone-build .phone1:hover {
+    background-position: -150px -50px;
+}
+.phone-build .phone1.active {
+    background-position: -150px -100px;
+}
+.scarf-build .scarf1 {
+    background-position: -400px 0;
+}
+.scarf-build .scarf1:hover {
+    background-position: -400px -50px;
+}
+.scarf-build .scarf1.active {
+    background-position: -400px -100px;
+}
+.tie-build .tie1 {
+    background-position: 0 0;
+}
+.tie-build .tie1:hover {
+    background-position: 0 -50px;
+}
+.tie-build .tie1.active {
+    background-position: 0 -100px;
+}
+.necklace-build .necklace1 {
+    background-position: -250px 0;
+}
+.necklace-build .necklace1:hover {
+    background-position: -250px -50px;
+}
+.necklace-build .necklace1.active {
+    background-position: -250px -100px;
+}
+.subblocks.clothes-build span
+ {
+    width: 47px;
+}
+.clothes-build span
+ {
+    background: url("/student/img/icons/build/build-clothes-folders.png");
+}
+.tops-build span,
+.bottoms-build span,
+.outfit-build span,
+.shoes-build span
+ {
+    background: url("/student/img/icons/build/build-clothes.png") no-repeat scroll 0 0;
+    cursor: pointer;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+	float: left;
+}
+.clothes-build .clothes-tops {
+    background-position: 0 0;
+}
+.clothes-build .clothes-bottoms {
+    background-position: -47px 0;
+}
+.clothes-build .clothes-outfit {
+    background-position: -94px 0;
+}
+.clothes-build .clothes-shoes {
+    background-position: -141px 0;
+}
+.clothes-build .clothes-tops:hover {
+    background-position: 0 -50px;
+}
+.clothes-build .clothes-bottoms:hover {
+    background-position: -47px -50px;
+}
+.clothes-build .clothes-outfit:hover {
+    background-position: -94px -50px;
+}
+.clothes-build .clothes-shoes:hover {
+    background-position: -141px -50px;
+}
+.tops-build .tops1 {
+    background-position: 0 0;
+}
+.tops-build .tops2 {
+    background-position: -50px 0;
+}
+.tops-build .tops3 {
+    background-position: -100px 0;
+}
+.tops-build .tops4 {
+    background-position: -200px 0;
+}
+.tops-build .tops3.female {
+    background-position: -150px 0;
+}
+.tops-build .tops4.female {
+    background-position: -700px 0;
+}
+.tops-build .tops1:hover {
+    background-position: 0 -50px;
+}
+.tops-build .tops2:hover {
+    background-position: -50px -50px;
+}
+.tops-build .tops3:hover {
+    background-position: -100px -50px;
+}
+.tops-build .tops4:hover {
+    background-position: -200px -50px;
+}
+.tops-build .tops3.female:hover {
+    background-position: -150px -50px;
+}
+.tops-build .tops4.female:hover {
+    background-position: -700px -50px;
+}
+.tops-build .tops1.active {
+    background-position: 0 -100px;
+}
+.tops-build .tops2.active {
+    background-position: -50px -100px;
+}
+.tops-build .tops3.active {
+    background-position: -100px -100px;
+}
+.tops-build .tops4.active {
+    background-position: -200px -100px;
+}
+.tops-build .tops3.female.active {
+    background-position: -150px -100px;
+}
+.tops-build .tops4.female.active {
+    background-position: -700px -100px;
+}
+.bottoms-build .bottoms1 {
+    background-position: -250px 0;
+}
+/*
+ * .bottoms-build .bottoms1.female {
+ *     background-position: -300px 0;
+ *     }
+ *     */
+.bottoms-build .bottoms2 {
+    background-position: -300px 0;
+}
+
+.bottoms-build .bottoms3 {
+    background-position: -350px 0;
+}
+.bottoms-build .bottoms4 {
+    background-position: -400px 0;
+}
+.bottoms-build .bottoms1:hover {
+    background-position: -250px -50px;
+}
+/*
+ * .bottoms-build .bottoms1.female:hover {
+ *     background-position: -300px -50px;
+ *     }
+ *     */
+.bottoms-build .bottoms2:hover {
+    background-position: -300px -50px;
+}
+.bottoms-build .bottoms3:hover {
+    background-position: -350px -50px;
+}
+.bottoms-build .bottoms4:hover {
+    background-position: -400px -50px;
+}
+.bottoms-build .bottoms1.active {
+    background-position: -250px -100px;
+}
+/*
+ * .bottoms-build .bottoms1.female.active {
+ *     background-position: -300px -100px;
+ *     }
+ *     */
+.bottoms-build .bottoms2.active {
+    background-position: -300px -100px;
+}
+.bottoms-build .bottoms3.active {
+    background-position: -350px -100px;
+}
+.bottoms-build .bottoms4.active {
+    background-position: -400px -100px;
+}
+#avatarmain .hidden {
+	display: none;
+}
+.outfit-build .outfit1 {
+    background-position: -450px 0;
+}
+.outfit-build .outfit1:hover {
+    background-position: -450px -50px;
+}
+.outfit-build .outfit1.active {
+    background-position: -450px -100px;
+}
+.shoes-build .shoes1 {
+    background-position: -500px 0;
+}
+.shoes-build .shoes2 {
+    background-position: -550px 0;
+}
+.shoes-build .shoes3 {
+    background-position: -600px 0;
+}
+.shoes-build .shoes4 {
+    background-position: -650px 0;
+}
+.shoes-build .shoes1:hover {
+    background-position: -500px -50px;
+}
+.shoes-build .shoes2:hover {
+    background-position: -550px -50px;
+}
+.shoes-build .shoes3:hover {
+    background-position: -600px -50px;
+}
+.shoes-build .shoes4:hover {
+    background-position: -650px -50px;
+}
+.shoes-build .shoes1.active {
+    background-position: -500px -100px;
+}
+.shoes-build .shoes2.active {
+    background-position: -550px -100px;
+}
+.shoes-build .shoes3.active {
+    background-position: -600px -100px;
+}
+.shoes-build .shoes4.active {
+    background-position: -650px -100px;
+}
+.subblocks span.pattern {
+    background: url("/student/img/icons/pattern/pattern-clothes.png") no-repeat scroll 0 0;
+}
+.subblocks span.stripeshor {
+    background-position: 0 0;
+}
+.subblocks span.stripesvert {
+    background-position: -42px 0;
+}
+.subblocks span.floral {
+    background-position: -84px 0;
+}
+.subblocks span.jungle {
+    background-position: -126px 0;
+}
+.subblocks span.dots {
+    background-position: -168px 0;
+}
+.subblocks span.check {
+    background-position: -210px 0;
+}
+.subblocks span.stripeshor:hover, .subblocks span.stripeshor.active {
+    background-position: 0 -42px;
+}
+.subblocks span.stripesvert:hover, .subblocks span.stripesvert.active {
+    background-position: -42px -42px;
+}
+.subblocks span.floral:hover, .subblocks span.floral.active {
+    background-position: -84px -42px;
+}
+.subblocks span.jungle:hover, .subblocks span.jungle.active {
+    background-position: -126px -42px;
+}
+.subblocks span.dots:hover, .subblocks span.dots.active {
+    background-position: -168px -42px;
+}
+.subblocks span.check:hover, .subblocks span.check.active {
+    background-position: -210px -42px;
+}
+.subblocks span.remove {
+    background-position: -252px 0;
+}
+.subblocks span.remove:hover {
+    background-position: -252px -42px;
+}
+
+.avatarblocks .tooltip-colour
+ {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #808080;
+    border-radius: 6px;
+    display: none;
+    padding: 4px;
+    position: absolute;
+}
+
+.avatarblocks .tooltip-colour:before {
+    background: url("../img/icons/arrow/tooltip-arrow.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: medium solid rgba(0, 0, 0, 0);
+    content: "";
+    height: 9px;
+    position: absolute;
+    right: 8px;
+    top: -9px;
+    width: 17px;
+}
+
+.avatarblocks .tooltip-colour span {
+    border-radius: 4px;
+    border-width: 1px;
+    height: 26px;
+    margin: 2px;
+    width: 26px;
+}
+div#sidebar-menu{
+	float: right;
+    margin-right: 10px;
+    width: 45px;
+}
+div#sidebar-menu.my-family-sidebar-menu {
+    width: 65px;
+    margin-right: 0;
+    margin-left: -10px;
+    position: relative;
+}
+
+
+.input-wrapper input{
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-color: -moz-use-text-color -moz-use-text-color #000000;
+    border-image: none;
+    border-radius: 0;
+    border-style: none none solid;
+    border-width: medium medium 1px;
+    font-size: 20px;
+    text-align: center;
+}
+#avatarmain p{
+    color: #000000;
+    font-family: Arial,"Arial Rounded MT Bold";
+    font-size: 1.5em;
+    font-weight: bold;
+  /*  text-align: center; i like 30/07 -MH*/
+    margin:0px;
+    margin-left:4px;
+}
+/*JOL added img box styling*/
+#avatarmain textarea, #avatarmain img, .multi-input-sm {
+    border: 2px solid #339999;
+    border-radius: 10px;
+    padding: 5px;
+    resize: none;
+    /* added by JOL */
+    background-color:#ffffff;
+}
+
+.style-size-40 {
+    height: 50px;
+    width: 50px;
+}
+.style-sizes-40{
+    height: 40px;
+    width: 40px;
+}
+.no-border{
+	border:none;
+}
+.colour-holder a{
+	margin:4px;
+}
+.colour-holder{
+	margin: 35px auto 0;
+    width: 320px;
+}
+.checkcolor{
+	position: absolute;
+    right: 75px;
+    top: -30px;
+}
+button.style-icon-link {
+    display: inline-block;
+}
+.age-num span {
+ 	background: none repeat scroll 0 0 #FFFFFF;
+    border: 2px solid #0C342B;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px 3px #CCCCCC;
+    cursor: pointer;
+    float: left;
+    font-size: 25px;
+    font-weight: bold;
+    height: 34px;
+    padding:5px 0;
+    text-align: center;
+    width: 38px;
+    margin-top:20px;
+    box-sizing: content-box !important;
+    margin-right:8px;
+}
+
+#age {
+    width: 80px;
+    padding-left:8px
+}
+
+.birthday-build input{
+	width:170px;
+}
+.age-num span:hover
+{
+    background: orange;
+}
+
+.age-num span:active
+{
+    background: #0C342B;
+    color: white;
+    border-color: #FFFFFF;
+}
+.delete
+{
+    font-size: 42px;
+    font-weight:  bold;
+}
+
+/*Relationship*/
+.relationship-builder {
+    width:500px;
+    height: 180px;
+    padding: 10px;
+    background: #fff;
+    border: 2px solid #c0c0c0;
+    border-radius: 10px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.relationship-builder .opt-col-1 {
+    float: left;
+    width: 90px;
+    padding: 0 5px;
+    height: 180px;
+}
+.relationship-builder .opt-col-1 .opt-col-holder {
+    width: 90px;
+    height: 180px;
+    display: table;
+}
+.relationship-builder .opt-col-1 .opt-col-inner {
+    display: table-cell;
+    width: 90px;
+    vertical-align: middle;
+}
+.relationship-builder .opt-col-3 {
+    float: left;
+    width: 290px;
+    height: 140px;
+    padding: 38px 5px 0;
+    position: relative;
+}
+.relationship-builder .opt-col-3:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 1px;
+    height: 100px;
+    background: #c0c0c0;
+    z-index: 10;
+    margin-top: -50px;
+}
+.relationship-builder .opt-col-3:after {
+    content: "";
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    width: 1px;
+    height: 100px;
+    background: #c0c0c0;
+    z-index: 10;
+    margin-top: -50px;
+    visibility: visible;
+    clear: none;
+}
+
+.relationship-builder .opt-row {
+    width: 100%;
+    margin: 0 0 10px;
+}
+.relationship-builder .opt-row:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.relationship-builder .opt-row .opt-col {
+    float: left;
+    width: 85px;
+    padding:0 5px;
+}
+.rel-btn {
+    display: inline-block;
+    width: 100%;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    border-style:none;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: normal;
+    padding: 5px 0;
+    outline: none;
+    text-shadow: 0 0 3px #5e5d5d;
+
+    -webkit-box-shadow: 0px 1px 3px 0px rgba(192,192,192,1);
+    -moz-box-shadow: 0px 1px 3px 0px rgba(192,192,192,1);
+    box-shadow: 0px 1px 3px 0px rgba(192,192,192,1);
+
+    background: #818181;
+    background: -moz-linear-gradient(top,  #818181 0%, #9e9e9e 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#818181), color-stop(100%,#9e9e9e));
+    background: -webkit-linear-gradient(top,  #818181 0%,#9e9e9e 100%);
+    background: -o-linear-gradient(top,  #818181 0%,#9e9e9e 100%);
+    background: -ms-linear-gradient(top,  #818181 0%,#9e9e9e 100%);
+    background: linear-gradient(to bottom,  #818181 0%,#9e9e9e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#818181', endColorstr='#9e9e9e',GradientType=0 );
+}
+.rel-btn.selected {
+    background: #e2959c;
+    background: -moz-linear-gradient(top,  #e2959c 0%, #c18187 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e2959c), color-stop(100%,#c18187));
+    background: -webkit-linear-gradient(top,  #e2959c 0%,#c18187 100%);
+    background: -o-linear-gradient(top,  #e2959c 0%,#c18187 100%);
+    background: -ms-linear-gradient(top,  #e2959c 0%,#c18187 100%);
+    background: linear-gradient(to bottom,  #e2959c 0%,#c18187 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2959c', endColorstr='#c18187',GradientType=0 );
+}
+.rel-btn:hover {
+    cursor: pointer;
+    outline: none;
+}
+.relationship-preview {
+    font-family: "Open Sans";
+    color: #000;
+    border-bottom: 1px solid #000;
+    font-style: 20px;
+    line-height: 28px;
+    height: 28px;
+    width: 290px;
+    text-align: center;
+}
+
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+/* .navbar-nav > li.completed {
+	background-color: #cc0000;
+	color:#000000;
+}
+
+.navbar-nav > li.skipped {
+	background-color: #ffffff;
+	color:#000000;
+} */
+
+/* DRAWING TOOL */
+
+/* DRAWING */
+.drawing-method .paintblock {
+  display: block;
+  margin: 0;
+  width: auto;
+}
+.drawing-method .panelleft { width: auto; overflow:hidden;}
+.drawing-method .panelright { width: 112px; }
+.drawing-method #tools-holder-bottom { left: 0; }
+.drawing-method #above { display: inline-block; margin: 0 auto 0; width: auto; }
+
+.drawing-method .wPaint-theme-standard .wPaint-menu-icon-img { margin: 6px 5px 5px 6px; }
+
+.wPaint-theme-standard .wPaint-menu-icon.wPaint-menu-icon-name-undo {
+  margin-left: 6px!important;
+}
+.wPaint-theme-standard .wPaint-menu-icon-select-img {
+  width: 28px!important;
+  height: 28px!important;
+}
+.wPaint-theme-standard .wPaint-menu-icon-group-arrow {
+  width: 100%!important;
+  height: 100%!important;
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.wPaint-theme-standard wPaint-menu-colorpicker.wPaint-menu-icon-name-strokeStyle .wPaint-menu-icon-img {
+  background-image: url("/student/js/canvas/js/img/icons-menu-main.png") !important;
+  background-position: -420px 0px!important;
+  border-radius: 0px!important;
+  height: 28px!important;
+  margin: 6px!important;
+  width: 28px!important;
+}
+
+#avatarmain .paintblock, #gallery-wrapper {
+    border: 2px solid #339999;
+    border-radius: 10px;
+    padding: 5px;
+    resize: none;
+    /* added by JOL */
+    background-color:#ffffff;
+    width:100%; 
+    height:100%;
+}
+
+/** Gallery **/
+
+div.gallery-item-img-holder {
+    height: 120px;
+    overflow: hidden;
+    padding:5px;
+    border: 2px solid #ccc;
+    border-radius:10px;
+    cursor:pointer;
+}
+.gallery-item-img-holder .folder{
+	background: url("../img/icons/action/action-folder.png") no-repeat scroll center center / 70px 70px rgba(0, 0, 0, 0);
+    height: 100%;
+    width: 100%;
+    display:inline-block;
+}
+.gallery-item-img-holder .folder:hover{
+	background: url("../img/icons/action/action-folder_hover.png") no-repeat scroll center center / 70px 70px rgba(0, 0, 0, 0);
+}
+#avatarmain .gallery-item p {
+	text-align:center;
+	font-size:1.2em;
+}
+.searchArea{
+   	margin-top: 20px;
+    text-align: center;
+}
+.searchArea input{
+	background: url("../img/icons/action/search.png") no-repeat scroll 10px center #FFFFFF;
+    border: 1px solid #CCCCCC;
+    height: 25px;
+    padding: 5px 5px 5px 40px !important;
+    width: 250px;
+    color:#8F9090 !important;
+    font-size:15px;
+}
+#avatarmain img.content-img {
+    max-height: 100%;
+    margin: auto;
+    text-align: center;
+    max-width: 100%;
+    border:none;
+    display: block;
+}
+.gallery-item .active{
+	border: 6px solid #CCCCCC !important;
+	padding: 2px !important;
+}
+
+/* Book stuff */
+div#book-closed {
+    background: url("/student/img/icons/book/book-closed.png") no-repeat;
+    height: 367px;
+    width: 398px;
+    margin:0 auto;
+    cursor:pointer;
+        box-sizing: content-box;
+}
+#book-title-text {
+        padding-left: 75px;
+        padding-top: 60px;
+        text-align: center;
+}
+div#book-opened {
+    background: url("/student/img/icons/book/book-open-lrg.png") no-repeat;
+    height: 450px;
+    margin: 10px auto 0;
+    width: 869px;
+}
+
+/* Certificate */
+#action-download {
+    background: url("../img/icons/action/download-small.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+   	display: inline-block;
+    height: 27px;
+    width: 27px;
+}
+
+.navbar {
+	margin-top:10px;
+	text-align:center;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+#about-me > span{
+	background: url("/student/img/icons/progress/aboutmeprogresssprite.png") no-repeat scroll 0 0;
+    /*border: 0 none;*/
+    border-radius: 8px;
+    box-shadow: -2px 4px 4px 0 #808080;*/
+    cursor: pointer;
+    float: left;
+    height: 49px;
+    margin: 0 4px;
+    width: 50px;
+    position: relative;
+    z-index: 100;
+}
+
+/*#about-me .prev.active {background-position: 0 0;}*/
+#about-me .name.skipped {background-position: 0 -50px;}
+#about-me .gender.skipped {background-position: 0 -99px;}
+#about-me .avatar.skipped {background-position: 0 -148px;}
+#about-me .age.skipped {background-position: 0 -197px;}
+#about-me .favourite-colour.skipped {background-position: 0 -246px;}
+#about-me .like.skipped {background-position: 0 -295px;}
+#about-me .dislike.skipped {background-position: 0 -344px;}
+#about-me .difficult.skipped {background-position: 0 -393px;}
+#about-me .good-at.skipped {background-position: 0 -443px;}
+#about-me .next.skipped {background-position: 0 -492px;}
+
+#about-me .prev {background-position: -49px 0;}
+#about-me .name {background-position: -49px -50px;}
+#about-me .gender {background-position: -49px -99px;}
+#about-me .avatar {background-position: -49px -148px;}
+#about-me .age {background-position: -49px -197px;}
+#about-me .favourite-colour {background-position: -49px -246px;}
+#about-me .like {background-position: -49px -295px;}
+#about-me .dislike {background-position: -49px -344px;}
+#about-me .difficult {background-position: -49px -393px;}
+#about-me .good-at {background-position: -49px -443px;}
+#about-me .next {background-position: -49px -492px;}
+
+#about-me .prev:hover {background-position: -100px 0;}
+#about-me .name.enabled:hover, #about-me .name.active {background-position: -100px -50px;}
+#about-me .gender.enabled:hover, #about-me .gender.active {background-position: -100px -99px;}
+#about-me .avatar.enabled:hover, #about-me .avatar.active {background-position: -100px -148px;}
+#about-me .age.enabled:hover, #about-me .age.active {background-position: -100px -197px;}
+#about-me .favourite-colour.enabled:hover, #about-me .favourite-colour.active {background-position: -100px -246px;}
+#about-me .like.enabled:hover, #about-me .like.active {background-position: -100px -295px;}
+#about-me .dislike.enabled:hover, #about-me .dislike.active {background-position: -100px -344px;}
+#about-me .difficult.enabled:hover, #about-me .difficult.active {background-position: -100px -393px;}
+#about-me .good-at.enabled:hover, #about-me .good-at.active {background-position: -100px -443px;}
+#about-me .next:hover {background-position: -100px -492px;}
+
+.navbar .disabled:not(.active) {
+ 	opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+}
