@@ -201,30 +201,46 @@
     <script src="https://cdn.rawgit.com/nnattawat/flip/v1.0.16/dist/jquery.flip.min.js"></script>
     <script>
       $(document).ready(function() {
-        var flag = false;
+        var flag = 0;
+        var clickCount = 0;
         var cardValue = null;
         var prevCard = null;
         var currentCard = null;
 
-        $('.reset').on( 'click', function(){ location.reload(); });
+        //$('.reset').on( 'click', function(){ location.reload(); });
+        $('.reset').on( 'click', function(event){
+          event.preventDefault();
+          if( $('.done').length > 11 )
+            location.reload();
+          
+        });
         $(".card").flip();
+        $('.card').on( 'click', startGame );
 
-        $('.card').on('click', function(){
+       
 
-            if( !flag ) {
+        function startGame() {
+        clickCount++;
+        if( clickCount > 2 ) { $(this).flip(false); }
+        else {     
+          $(this).flip(true);
+          if( !flag ) {
               prevCard = $(this).attr('card-id');
-              cardValue = $(this).attr('card-value');
-              flag = true;
+              cardValue = $(this).attr('card-value');             
+              flag++; // = true;
             } else {
               if( $(this).attr('card-value') != cardValue) {
                 currentCard = $(this).attr('card-id');
                 matchCard(prevCard, currentCard);
+                flag++;
               }
-              flag = false;
+              
             }
-            console.log(prevCard +" "+currentCard);
-            console.log(cardValue);
-        });
+            //console.log(prevCard +" "+currentCard);
+            //console.log(cardValue);
+            //clickCount = 0;
+          }
+        }
 
         function matchCard(cardOne, cardTwo) {
           if( cardTwo === cardOne ) {
@@ -232,11 +248,16 @@
                 $('[card-id="' + cardTwo + '"]').flip(false);
                 $('[card-id="' + cardTwo + '"]').off('click');
                 $('[card-id="' + cardTwo + '"] .star').show(100);
-              }, 1000 );
+                $('[card-id="' + cardTwo + '"]').addClass('done');
+                flag = 0;
+                clickCount = 0;
+              }, 2500 );
           } else {
             setTimeout( function() { 
-              $('[card-id="' + cardTwo + '"], [card-id="' + cardOne + '"]').flip(false);                                  
-            }, 1000 );
+              $('[card-id="' + cardTwo + '"], [card-id="' + cardOne + '"]').flip(false);
+              flag = 0;
+              clickCount = 0;                                
+            }, 2500 );
           }
         }
       });
