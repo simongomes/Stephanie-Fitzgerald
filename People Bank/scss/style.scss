@@ -1,0 +1,165 @@
+/*
+* My Feelings - Card Game Stylesheet
+* Author: SIMON GOMES
+* Date: August 25, 2015
+* Version: 1.0
+*/
+/*-- Fonts Import --*/
+@import url('http://fonts.googleapis.com/css?family=Open+Sans'); /* font-family: 'Open Sans', sans-serif; */
+body {
+	background: url("../image/background.png") no-repeat scroll center top;
+	background-size: cover;
+}
+
+#wrap .main {
+	margin-top: 60px;
+	font-family: 'Open Sans', sans-serif;
+	.block {
+		.inner {
+			min-height: 500px;
+			//border: 2px solid #CC0001;
+			//background: rgba(255, 255, 255, 0.8);
+			padding: 0 15px;
+		}
+
+		&.desty {
+			width: 30%;
+			float: left;
+			.inner {
+				max-width: 300px;
+				margin: 0 auto;
+
+				.frame {
+					width: 148px;
+					height: 222px;
+					background: url('../image/rectangular-frame.png') no-repeat top left;
+					margin: 0 auto;
+					position: relative;
+
+					.avater-head {
+						position: absolute;
+						bottom: 15px;
+						left: 18px;
+					}
+				}
+				.desty-img {
+					margin-top: 50px;
+					margin-left: 10px;
+					max-width: 300px;				
+				}
+			}			
+		} // end desty
+
+		&.slider {
+			width: 69%;
+			float: right;
+
+			.item {
+				max-width: 130px;
+			}
+
+			.inner {
+				.frame {
+					width: 100%;					
+					position: relative;					
+					&.oval {
+						height: 207px;
+						background: url('../image/oval-frame.png') no-repeat center top;
+						background-size: 100%;
+						margin-top: 100px;
+						.avater-head {
+							position: absolute;
+							top: 54px;
+							left: 10px;
+							width: 110px;
+						}
+						/*.ribbon {
+							width: 199px;
+							height: 71px;
+							background: url('../image/ribbon.png') no-repeat;
+							position: absolute;
+							left: 5px;
+							bottom: 0;
+							text-align: center;
+
+							.number {
+								font-size: 1.95em;
+								margin-left: -20px;
+								margin-top: 5px;
+								display: block;
+								font-weight: bold;
+							}
+						}*/
+					}
+
+					&.rectangle {
+						background: url('../image/rectangular-frame.png') no-repeat center top;
+						height: 245px;
+						background-size: 100%;
+						.avater-head {
+							position: absolute;
+							top: 55px;
+							left: 0;
+							width: 125px;
+						}						
+					}
+					.ribbon {
+							width: 100%;
+							height: 47px;
+							background: url('../image/ribbon.png') no-repeat;
+							position: absolute;
+							left: 2px;
+							bottom: 0;
+							text-align: center;
+							background-size: 100%;
+							.number {
+								font-size: 1.25em;
+								margin-left: -10px;
+								margin-top: 4px;
+								display: block;
+								font-weight: bold;
+							}
+						}
+				}
+			}	
+			.owl-controls {
+				position: absolute;
+				top: 40%;
+				left: 0;
+				right: 0;
+				.owl-prev {
+				  float: left;
+				  margin-left: -40px;
+				  background: url('../image/arrowleft.png') no-repeat top left;
+				  background-size: 100%;
+				  height: 58px;
+				  width: 28px;
+				  text-indent: -9999px;
+				}
+				.owl-next {
+				  float: right;
+				  margin-right: -10px;
+				  background: url('../image/arrowright.png') no-repeat top left;
+				  background-size: 100%;
+				  height: 58px;
+				  width: 28px;
+				  text-indent: -9999px;
+				}
+			}		
+		} // end slider
+	}
+}
+
+/* Media Queries */
+@media screen  and  (min-width: 992px) and (max-width: 1199px) {
+	
+}
+@media screen  and (max-width: 1023px) {
+	
+}
+@media screen  and (max-width: 991px) {
+	
+}
+@media screen  and ( max-width: 630px ) {
+	
+}
